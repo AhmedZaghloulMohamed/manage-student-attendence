@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>students</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/student.css">
+    <link rel="stylesheet" href="./css/header.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header_content">
+        <div class="header_logo">
+            <img src="logo.jpg" alt="logo">
+        </div>
+
+        <nav class="navbar">
+            <ul class="unstyled_list">
+                <li class="dropDown">
+                    <a class="linkItem" href="institiution.html">institution</a></li>
+                <li class="dropDown">
+                    <a class="linkItem" href="level.html">level</a></li>
+                <li><a class="linkItem" href="category.html">Category</a></li>
+                <li><a class="linkItem" href="subject.html">Subject</a></li>
+                <li><a class="linkItem" href="student.html">Student</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <ul class="unstyled_list">
+                <li><a class="logout linkItem" href="login.html">logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="head">
+            <h2>Students</h2>
+            <p>students operaions</p>
+        </div>
+        <div class="inputs">
+            <div class="studentInput">
+                <input type="text" id="StudentName" placeholder="student Name">
+                <input type="text" id="StudentId" placeholder="student Id">
+                <input type="tel" id="StudentPhone" placeholder="student phone">
+                <input type="email" id="StudentEmail" placeholder="student Email">
+                <input type="password" id="StudentPass" placeholder="student password">
+            </div>
+
+            <div class="options">
+
+                <div class="selection">
+                    <label for="subject">Choose subject</label>
+                    <select id="subject">
+                    
+                    </select>
+                </div>
+                <div class="selection">
+                    <label for="category">Choose Category</label>
+                    <select id="category">
+                    
+                    </select>
+                </div>
+                <div class="selection">
+                    <label for="institutions">Choose institution</label>
+                    <select id="institutions">
+                    
+                    </select>
+                </div>
+                <div class="selection">
+                    <label for="level">Choose level</label>
+                    <select id="level">
+    
+                    </select>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <button id="create">create</button>
+        <div class="outputs">
+            <div class="search">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button onclick="getSearchMode(this.id)" id="Name">search by name</button>
+                    <button onclick="getSearchMode(this.id)" id="Id">search by id</button>
+                </div>
+            </div>
+            <div id="deleteAll">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>student_id</th>
+                    <th>phone</th>
+                    <th>email</th>
+                    <th>password</th>
+                    <th>subject</th>
+                    <th>level</th>
+                    <th>category</th>
+                    <th>institution</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="t_body">
+                    <tr>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+
+    <script src="./js/student.js"></script>
+</body>
+
+</html>

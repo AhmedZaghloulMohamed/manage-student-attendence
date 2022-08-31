@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>institution</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+
+<body>
+    <!-- headre -->
+    <div class="header_content">
+        <div class="header_logo">
+            <img src="logo.jpg" alt="logo">
+        </div>
+
+        <nav class="navbar">
+            <ul class="unstyled_list">
+                <li class="dropDown">
+                    <a class="linkItem" href="institiution.html">institution</a></li>
+                <li class="dropDown">
+                    <a class="linkItem" href="level.html">level</a></li>
+                <li><a class="linkItem" href="category.html">Category</a></li>
+                <li><a class="linkItem" href="subject.html">Subject</a></li>
+                <li><a class="linkItem" href="student.html">Student</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <ul class="unstyled_list">
+                <li><a class="logout linkItem" href="login.html">logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="head">
+            <h2>institution</h2>
+            <p>institution operaions</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="insName" placeholder="institution Name">
+            <input type="text" id="insId" placeholder="institution Id">
+            <button id="create">create</button>
+        </div>
+        <div class="outputs">
+            <div class="search">
+                <input onkeyup="searchdata(this.value)" type="text" id="search" placeholder="search">
+                <div class="btnsearch">
+                    <button onclick="getSearchMode(this.id)" id="searchName">search by name</button>
+                    <button onclick="getSearchMode(this.id)" id="searchId">search by id</button>
+                </div>
+            </div>
+            <div id="deleteAll">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>institution id</th>
+                    <th>institution name</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="t_body">
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="./js/institution.js">
+    </script>
+    <script src="./js/level.js"></script>
+</body>
+
+</html>

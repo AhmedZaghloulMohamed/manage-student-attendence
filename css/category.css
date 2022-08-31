@@ -1,0 +1,21 @@
+.selection {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#institutions,
+#level {
+    width: 85%;
+    height: 30px;
+    text-align: center;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+table #delete {
+    background: red;
+}
